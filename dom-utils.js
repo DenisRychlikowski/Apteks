@@ -37,7 +37,7 @@ const createProductDiv = (products) => {
 export const renderProducts = (products) => {
     const mainElement = document.querySelector(".main-products");
     
-    if(location.pathname == "//index.html"){
+    if(location.pathname == "index.html"){
         products.map((products) => {
             if (products.id < 4) {
                 mainElement.appendChild(createProductDiv(products));
@@ -45,6 +45,8 @@ export const renderProducts = (products) => {
         });
     }
     else{
+        
+        console.log("lol");
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
         });
