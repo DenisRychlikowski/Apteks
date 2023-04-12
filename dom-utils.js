@@ -40,13 +40,11 @@ export const renderProducts = (products) => {
     if(location.pathname == "./index.html"){
         products.map((products) => {
             if (products.id < 4) {
-                Console.log("działa");
                 mainElement.appendChild(createProductDiv(products));
             }
         });
     }
     else{
-        Console.log("Nie działa");
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
         });
