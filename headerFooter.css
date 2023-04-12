@@ -37,6 +37,8 @@ header{
     min-height: 15vh;
     width: 100%;
     z-index: 100;  /* Przypomnij se koszyk */
+    position: sticky;
+    top: 0;
 }
 header .header-menu .navbar{
     list-style: none;
