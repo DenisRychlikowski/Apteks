@@ -45,7 +45,6 @@ export const renderProducts = (products) => {
         });
     }
     else{
-        Console.log("lol");
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
         });
