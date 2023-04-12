@@ -46,6 +46,7 @@ export const renderProducts = (products) => {
         });
     }
     else{
+        Console.log("Nie działa");
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
         });
