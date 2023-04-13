@@ -47,7 +47,7 @@ const clearCart = () => {
     localStorage.removeItem("cartItems");
     cartItems = [];
     const cartCounter = document.querySelector(".cart-counter");
-    cartCounter.innerText = "";
+    cartCounter.innerText = "0";
     renderCartItems();
 }
 
