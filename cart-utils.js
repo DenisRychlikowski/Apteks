@@ -46,6 +46,8 @@ const clearCart = () => {
     expenseElement.innerText = "SUMA";
     localStorage.removeItem("cartItems");
     cartItems = [];
+    const cartCounter = document.querySelector(".cart-counter");
+    cartCounter.innerText = "";
     renderCartItems();
 }
 
