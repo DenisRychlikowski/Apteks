@@ -82,7 +82,6 @@ header .header-menu .navbar .links a:hover:after{
     transition: .5s;
 }
 header .header-menu .navbar .cart-icon .cart-counter{
-    content: '';
     position: absolute;
     top: -20%;
     right: 10%;
