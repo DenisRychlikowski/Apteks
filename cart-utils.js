@@ -12,9 +12,6 @@ const showCart = () => {
 export const addToCart = (product) => {
     cartItems.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
-
-    const cartCounter = document.querySelector(".cart-counter");
-    cartCounter.textContent = cartItems.length;
 }
 
 export const renderCartItems = () => {
@@ -24,7 +21,10 @@ export const renderCartItems = () => {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     let sum = 0;
 
-    cartItems.forEach((products) => {
+    cartItems.map((products) => {
+        const cartCounter = document.querySelector(".cart-counter");
+        cartCounter.textContent = cartItems.length;
+        
         const liElement = document.createElement("li");
         const imgElement = document.createElement("img");
         const expenseElement = document.querySelector(".expense");
