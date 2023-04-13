@@ -81,6 +81,20 @@ header .header-menu .navbar .links a:hover:after{
     width: 100%;
     transition: .5s;
 }
+header .header-menu .navbar .cart-icon .cart-counter{
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    display: grid;
+    place-items: center;
+    background: var(--orange);
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+}
 
 /* Footer styles */
 footer{

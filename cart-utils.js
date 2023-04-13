@@ -13,10 +13,8 @@ export const addToCart = (product) => {
     cartItems.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-    const cartElement = document.querySelector(".cart");
-    if(cartElement.style.right === "-30%"){
-        cartElement.style.right = "0";
-    }
+    const cartCounter = document.querySelector(".cart-counter");
+    cartCounter.textContent = cartItems.length;
 }
 
 export const renderCartItems = () => {
