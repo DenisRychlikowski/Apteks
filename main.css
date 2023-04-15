@@ -57,7 +57,7 @@ main :where(.bestseller-h2, .marki-h2){
     margin: 60px 0;
 }
 main .main-products .product{
-    background: var(--white);
+    background: var(--main-background);
     box-shadow: 0px 8px 15px -8px rgba(49, 50, 56, 0.86);
     border-radius: 15px;
     width: 30%;
