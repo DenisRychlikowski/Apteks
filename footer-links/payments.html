@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon">
     <style>
-        h1, h3, table{
+        h1, .main-payments{
             margin: 0 30px;
+        }
+        .main-payments img{
+            width: 100px;
+            height: auto;
+            margin-top: 40px;
         }
         h1{
             text-transform: uppercase;
@@ -69,28 +74,33 @@
     <main>
 
         <h1>Płatności za zamówienia</h1>
-        <h3>Możliwe formy płatności w zależności od sposobu realizacji zamówienia</h3>
-        <table>
-            <tr>
-                <th>Odbiór w aptece</th>
-                <th>Zamówienia wysyłkowe</th>
-            </tr>
-            <tr>
-                <td>Płatność gotówką lub kartą płatniczą</td>
-                <td>
-                    <ol>
-                        <li>Płatność online PayU</li>
-                        <li>Raty PayU</li>
-                        <li>BLIK</li>
-                    </ol>
-                    <p>Dla zamówień powyżej 300 zł oferujemy możliwość płatności ratalnej realizowanej przez serwis PayU.</p>
-                </td>
-            </tr>
-        </table>
+        <div class="main-payments">
+            <h3>Możliwe formy płatności w zależności od sposobu realizacji zamówienia</h3>
+            <table>
+                <tr>
+                    <th>Odbiór w aptece</th>
+                    <th>Zamówienia wysyłkowe</th>
+                </tr>
+                <tr>
+                    <td>Płatność gotówką lub kartą płatniczą</td>
+                    <td>
+                        <ol>
+                            <li>Płatność online PayU</li>
+                            <li>Raty PayU</li>
+                            <li>BLIK</li>
+                        </ol>
+                        <p>Dla zamówień powyżej 300 zł oferujemy możliwość płatności ratalnej realizowanej przez serwis PayU.</p>
+                    </td>
+                </tr>
+            </table>
 
-        <a href="https://blik.com/jak-korzystac-z-blika">
-            <img src="https://seeklogo.com/images/B/blik-logo-A759DC4120-seeklogo.com.png" alt="blik ikona" />
-        </a>
+            <a href="https://blik.com/jak-korzystac-z-blika">
+                <img src="https://seeklogo.com/images/B/blik-logo-A759DC4120-seeklogo.com.png" alt="blik ikona" />
+            </a>
+            <a href="https://poland.payu.com/wp-content/uploads/sites/14/2021/06/Najczesciej_zadawane_pytania_o_Raty_PayU_3.pdf">
+                <img src="../assets/PAYU_LOGO_LIME.png" alt="PayU ikona" />
+            </a>
+        </div>
         
         <div class="cart" style="right: -30%;">
             <ul class="cart-items"></ul>

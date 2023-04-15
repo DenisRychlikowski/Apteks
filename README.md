@@ -7,3 +7,5 @@
 # favicon-image: https://www.doz.pl/favicon.ico?v=2;
 
 # ion-icon: https://ionic.io/ionicons;
+
+# PayU image: https://poland.payu.com/portal-marki-payu/;
