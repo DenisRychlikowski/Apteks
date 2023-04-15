@@ -24,7 +24,7 @@ export const renderCartItems = () => {
     cartItems.map((products) => {
         const cartCounter = document.querySelector(".cart-counter");
         cartCounter.textContent = cartItems.length;
-        cartCounter.style.display = "block";
+        cartCounter.style.display = "grid";
         
         const liElement = document.createElement("li");
         const imgElement = document.createElement("img");
