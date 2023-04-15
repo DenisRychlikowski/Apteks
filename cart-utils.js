@@ -24,6 +24,7 @@ export const renderCartItems = () => {
     cartItems.map((products) => {
         const cartCounter = document.querySelector(".cart-counter");
         cartCounter.textContent = cartItems.length;
+        cartCounter.style.display = "block";
         
         const liElement = document.createElement("li");
         const imgElement = document.createElement("img");
@@ -48,6 +49,7 @@ const clearCart = () => {
     cartItems = [];
     const cartCounter = document.querySelector(".cart-counter");
     cartCounter.innerText = "0";
+    cartCounter.style.display = "none";
     renderCartItems();
 }
 
