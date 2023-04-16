@@ -98,7 +98,7 @@ main .main-products .product button{
     border: none;
     outline: none;
     padding: 10px 20px;
-    background: var(--orange);
+    background: var(--footer-background);
     font-size: clamp(20px, 25px, 30px);
     color: var(--white);
     transition: .5s;
