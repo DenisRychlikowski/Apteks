@@ -68,7 +68,7 @@ header .header-menu .navbar :where(.cart-icon a:hover ion-icon){
 header .header-menu .navbar .links a:after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 0;
     right: 0;
     margin: auto;
