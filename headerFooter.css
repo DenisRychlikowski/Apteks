@@ -95,20 +95,43 @@ header .header-menu .navbar .cart-icon .cart-counter{
     color: white;
 }
 
-/* drop menu sport */
-/* header .header-menu .navbar .links.--drop a{
+/* drop menu sklep */
+header .header-menu .navbar .links.--drop .link{
     position: relative;
 }
 header .header-menu .navbar .links.--drop .drop-menu-sklep{
+    display: none;
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    background: var(--orange);
+    bottom: -200px;
+    right: 7%;
+    width: 20%;
+    height: 200px;
+    background: var(--white);
+    border-radius: 0 0 15px 15px;
+}
+header .header-menu .navbar .links.--drop .drop-menu-sklep ul{
+    position: relative;
+    left: 30%;
 }
 header .header-menu .navbar .links.--drop .drop-menu-sklep ul li{
     list-style: none;
-} */
+    margin: 20px 0px;
+}
+header .header-menu .navbar .links.--drop .drop-menu-sklep ul li a{
+    color: var(--orange);
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+header .header-menu .navbar .links.--drop .drop-menu-sklep ul li a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+header .header-menu .navbar .links.--drop:hover .drop-menu-sklep,
+header .header-menu .navbar .links.--drop .drop-menu-sklep:hover{
+    display: block;
+}
 
 /* Footer styles */
 footer{
