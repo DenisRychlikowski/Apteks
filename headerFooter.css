@@ -96,7 +96,7 @@ header .header-menu .navbar .cart-icon .cart-counter{
 }
 
 /* drop menu sport */
-header .header-menu .navbar .links.--drop a{
+/* header .header-menu .navbar .links.--drop a{
     position: relative;
 }
 header .header-menu .navbar .links.--drop .drop-menu-sklep{
@@ -108,7 +108,7 @@ header .header-menu .navbar .links.--drop .drop-menu-sklep{
 }
 header .header-menu .navbar .links.--drop .drop-menu-sklep ul li{
     list-style: none;
-}
+} */
 
 /* Footer styles */
 footer{
