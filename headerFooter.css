@@ -103,7 +103,7 @@ header .header-menu .navbar .links.--drop .drop-menu-sklep{
     display: none;
     position: absolute;
     bottom: -200px;
-    right: 7%;
+    right: 9%;
     width: 20%;
     height: 200px;
     background: var(--white);
