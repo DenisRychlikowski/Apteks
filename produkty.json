@@ -4,35 +4,35 @@
         "name": "Ibuprom max rapid",
         "image": "https://www.ibuprom.pl/upload/original-files/ibuprom-max-rapid.webp",
         "price": 19.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 2,
         "name": "Ibuprom rapid",
         "image": "https://www.ibuprom.pl/upload/original-files/ibuprom-rapid.webp",
         "price": 29.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 3,
         "name": "Ibuprom zatoki max",
         "image": "https://www.ibuprom.pl/upload/original-files/ibuprom-zatoki-max.webp",
         "price": 34.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 4,
         "name": "Ibuprom ultramax",
         "image": "https://www.ibuprom.pl/upload/original-files/ibu-um-www-kv16_604a2df8b644b.png",
         "price": 9.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 5,
         "name": "Ibuprom dla dzieci forte",
         "image": "https://www.ibuprom.pl/upload/original-files/iddf-home_6024233aa66c1.png",
         "price": 24.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 6,
@@ -46,7 +46,7 @@
         "name": "SYLIMARYNA EXTRA 70MG",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10243/MicrosoftTeams-image.png",
         "price": 11.19,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 8,
@@ -67,41 +67,97 @@
         "name": "BACOPA",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10695/adaptogeny_zielone_bacopa.png",
         "price": 29.90,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 11,
         "name": "KUDZU",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10694/adaptogeny_zielone_kudzu.png",
         "price": 27.70,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 12,
         "name": "ELECTROVIT ELEKTROLITY",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10787/Electrovit-pomarancza.webp",
         "price": 14.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 13,
         "name": "WITAMINA C 1000 MG",
         "image": "https://www.activlab.pl/environment/cache/images/300_300_productGfx_9824/vitamina_c-View-1.png",
         "price": 20.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 14,
         "name": "PROBIOTIC XTRA",
         "image": "https://www.activlab.pl/environment/cache/images/300_300_productGfx_10520/probiotic-xtra.png",
         "price": 69.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 15,
         "name": "MAGNEZ + WIT. B6",
         "image": "https://www.activlab.pl/environment/cache/images/300_300_productGfx_10533/Activlab-Pharma-Magnez-Witamina-B6.webp",
         "price": 13.99,
+        "category": "zdrowie"
+    },
+    {
+        "id": 16,
+        "name": "Veoli Botanica Tonik",
+        "image": "https://media.cocolita.pl/img/imagecache/91001-92000/6b969a8096653ba2009cdde28cf30d4b204165aa.webp",
+        "price": 55.20,
+        "category": "kosmetyki"
+    },
+    {
+        "id": 17,
+        "name": "Veoli Botanica Mleczna Emulsja",
+        "image": "https://media.cocolita.pl/img/imagecache/93001-94000/e2497cba498dc8264af9bbcef5163202dead3ed4.webp",
+        "price": 55.20,
+        "category": "kosmetyki"
+    },
+    {
+        "id": 18,
+        "name": "Veoli Botanica Balsam",
+        "image": "https://media.cocolita.pl/img/imagecache/91001-92000/0364308f78f84dba7d92cd4e282932f9d5e7613b.webp",
+        "price": 88.99,
+        "category": "kosmetyki"
+    },
+    {
+        "id": 19,
+        "name": "Olimp BCAA 1100 Mega Caps",
+        "image": "https://azcdn.doz.pl/image/d/product/9275a01d-scale-350x350.webp",
+        "price": 50.99,
         "category": "sport"
+    },
+    {
+        "id": 20,
+        "name": "ALE Active Life Energy BCAA",
+        "image": "https://azcdn.doz.pl/image/d/product/1559e5c1-scale-350x350.webp",
+        "price": 79.99,
+        "category": "sport"
+    },
+    {
+        "id": 21,
+        "name": "UltraBlanc, pasta do zębów",
+        "image": "https://azcdn.doz.pl/image/d/product/53fad8bf-scale-350x350.webp",
+        "price": 18.99,
+        "category": "higiena"
+    },
+    {
+        "id": 22,
+        "name": "Cleanic, płatki kosmetyczne",
+        "image": "https://azcdn.doz.pl/image/d/product/38950296-scale-350x350.webp",
+        "price": 7.19,
+        "category": "higiena"
+    },
+    {
+        "id": 23,
+        "name": "Eludril Care, płyn higieny jamy ustnej",
+        "image": "https://azcdn.doz.pl/image/d/product/23585478-scale-350x350.webp",
+        "price": 18.99,
+        "category": "higiena"
     }
 ]

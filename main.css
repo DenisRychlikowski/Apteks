@@ -81,7 +81,7 @@ main .main-products .product img:hover{
     transition: .5s;
 }
 main .main-products .product .name-product{
-    height: 72px;
+    height: 100px;
     font-size: clamp(25px, 30px, 33px);
     font-weight: 600;
     padding: 20px;
