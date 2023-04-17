@@ -96,7 +96,13 @@ header .header-menu .navbar .cart-icon .cart-counter{
 }
 
 /* drop menu sport */
-header .header-menu .navbar .links.--drop .drop-menu-sklep
+header .header-menu .navbar .links.--drop a{
+    position: relative;
+}
+header .header-menu .navbar .links.--drop .drop-menu-sklep{
+    position: absolute;
+    bottom: 0;
+}
 
 /* Footer styles */
 footer{
