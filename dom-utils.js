@@ -51,6 +51,27 @@ export const renderProducts = (products) => {
             }
         });
     }
+    else if(location.pathname.endsWith("zdrowie-sklep.html")){
+        products.map((products) => {
+            if(products.category === "zdrowie"){
+                mainElement.appendChild(createProductDiv(products));
+            }
+        });
+    }
+    else if(location.pathname.endsWith("kosmetyki-sklep.html")){
+        products.map((products) => {
+            if(products.category === "kosmetyki"){
+                mainElement.appendChild(createProductDiv(products));
+            }
+        });
+    }
+    else if(location.pathname.endsWith("higiena-sklep.html")){
+        products.map((products) => {
+            if(products.category === "higiena"){
+                mainElement.appendChild(createProductDiv(products));
+            }
+        });
+    }
     else{
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
