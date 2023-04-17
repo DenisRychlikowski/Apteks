@@ -32,7 +32,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    padding-bottom: 38px;
     background: var(--main-background);
     min-height: 10vh;
     width: 100%;
@@ -55,6 +54,7 @@ header .header-menu .navbar :where(.links a, .cart-icon a){
     text-decoration: none;
     transition: .5s;
     position: relative;
+    padding-bottom: 38px;
 }
 header .header-menu .navbar :where(.cart-icon a ion-icon){
     cursor: pointer;
