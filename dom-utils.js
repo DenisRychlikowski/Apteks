@@ -37,16 +37,16 @@ const createProductDiv = (products) => {
 export const renderProducts = (products) => {
     const mainElement = document.querySelector(".main-products");
     
-    if (location.pathname.endsWith("index.html") || location.pathname.endsWith("Apteks/")) { //Jeśli się kończy adres "index.html" zwraca true
+    if(location.pathname.endsWith("index.html") || location.pathname.endsWith("Apteks/")) { //Jeśli się kończy adres "index.html" zwraca true
         products.map((products) => {
-            if (products.id < 4) {
+            if(products.id < 4) {
                 mainElement.appendChild(createProductDiv(products));
             }
         });
     }
     else if(location.pathname.endsWith("sport-sklep.html")){
         products.map((products) => {
-            if(products.id < 4){
+            if(products.category === "sport"){
                 mainElement.appendChild(createProductDiv(products));
             }
         });
