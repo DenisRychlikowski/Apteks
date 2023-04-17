@@ -44,6 +44,13 @@ export const renderProducts = (products) => {
             }
         });
     }
+    else if(location.pathname.endsWith("sport-sklep.html")){
+        products.map((products) => {
+            if(products.category == "sport"){
+                mainElement.appendChild(createProductDiv(products));
+            }
+        });
+    }
     else{
         products.map((products) => {
             mainElement.appendChild(createProductDiv(products));
