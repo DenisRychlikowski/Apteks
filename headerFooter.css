@@ -95,6 +95,9 @@ header .header-menu .navbar .cart-icon .cart-counter{
     color: white;
 }
 
+/* drop menu sport */
+header .header-menu .navbar .links.--drop .drop-menu-sklep
+
 /* Footer styles */
 footer{
     width: 100%;
