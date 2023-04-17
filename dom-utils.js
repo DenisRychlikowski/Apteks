@@ -46,7 +46,7 @@ export const renderProducts = (products) => {
     }
     else if(location.pathname.endsWith("sport-sklep.html")){
         products.map((products) => {
-            if(products.category == "sport"){
+            if(products.id < 4){
                 mainElement.appendChild(createProductDiv(products));
             }
         });

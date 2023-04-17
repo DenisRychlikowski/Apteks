@@ -53,14 +53,14 @@
         "name": "CYNK 15 MG",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10723/cynk-tabletki-15-mg.png",
         "price": 13.99,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 9,
         "name": "RHODIOLA",
         "image": "https://www.activlab.pl/environment/cache/images/0_0_productGfx_10693/adaptogeny_zielone_rhodiola.png",
         "price": 42.50,
-        "category": "sport"
+        "category": "zdrowie"
     },
     {
         "id": 10,

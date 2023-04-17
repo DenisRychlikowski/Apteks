@@ -20,10 +20,20 @@
 
         <div class="header-menu">
             <ul class="navbar">
-                <li class="links"><a href="index.html">Strona główna</a></li>
-                <li class="links"><a href="sklep.html">Sklep</a></li>
-                <li class="links"><a href="information.html">O nas</a></li>
-                <li class="cart-icon"><a href="#">
+                <li class="links"><a href="index.html" class="link">Strona główna</a></li>
+                <li class="links --drop">
+                    <a href="sklep.html" class="link">Sklep</a>
+                    <div class="drop-menu-sklep">
+                        <ul>
+                            <li><a href="#">Zdrowie</a></li>
+                            <li><a href="./sklep-drop-links/sport-sklep.html">Sport</a></li>
+                            <li><a href="#">Higiena</a></li>
+                            <li><a href="#">Kosmetyki</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="links"><a href="information.html" class="link">O nas</a></li>
+                <li class="cart-icon"><a>
                     <ion-icon size="large" name="cart-outline"></ion-icon>
                     <span class="cart-counter" style="display: none;"></span>
                 </a></li>

@@ -14,15 +14,15 @@
     <header>
         <div class="header-logo">
             <a href="index.html">
-                <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
+                <img src="../assets/logo.png" alt="Logo" width="250px" height="80px" />
             </a>
         </div>
 
         <div class="header-menu">
             <ul class="navbar">
-                <li class="links"><a href="index.html" class="link">Strona główna</a></li>
+                <li class="links"><a href="../index.html" class="link">Strona główna</a></li>
                 <li class="links --drop">
-                    <a href="sklep.html" class="link">Sklep</a>
+                    <a href="../sklep.html" class="link">Sklep</a>
                     <div class="drop-menu-sklep">
                         <ul>
                             <li><a href="#">Zdrowie</a></li>
@@ -32,7 +32,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="links"><a href="information.html" class="link">O nas</a></li>
+                <li class="links"><a href="../information.html" class="link">O nas</a></li>
                 <li class="cart-icon"><a>
                     <ion-icon size="large" name="cart-outline"></ion-icon>
                     <span class="cart-counter" style="display: none;"></span>
@@ -42,7 +42,14 @@
     </header>
 
     <main>
-
+        <div class="cart" style="right: -30%;">
+            <ul class="cart-items"></ul>
+            <div class="cart-options">
+                <span class="expense">SUMA</span>
+                <button class="buy-btn">Zakup</button>
+                <button class="clear-cart">Wyczyść koszyk</button>
+            </div>
+        </div>
     </main>
 
     <footer>
