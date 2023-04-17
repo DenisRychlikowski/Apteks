@@ -102,6 +102,12 @@ header .header-menu .navbar .links.--drop a{
 header .header-menu .navbar .links.--drop .drop-menu-sklep{
     position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--orange);
+}
+header .header-menu .navbar .links.--drop .drop-menu-sklep ul li{
+    list-style: none;
 }
 
 /* Footer styles */
