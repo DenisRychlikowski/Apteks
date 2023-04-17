@@ -88,7 +88,7 @@ header .header-menu .navbar .cart-icon .cart-counter{
     display: grid;
     place-items: center;
     background: var(--orange);
-    height: 50%;
+    height: 40%;
     aspect-ratio: 1 / 1;
     font-size: 1rem;
     border-radius: 50%;
