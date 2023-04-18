@@ -1,5 +1,7 @@
+//! tablica przechowująca dane dodanych produktów
 export let cartItems = [];
 
+//! funkcja wysuwająca koszyk
 const showCart = () => {
     const cartElement = document.querySelector(".cart");
     if(cartElement.style.right === "-30%"){
@@ -9,11 +11,13 @@ const showCart = () => {
     }
 }
 
+//! funkcja dodająca produkt do tablicy i do local storage
 export const addToCart = (product) => {
     cartItems.push(product);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
 
+//! funkcja renderująca produkt w koszyku
 export const renderCartItems = () => {
     const cartElement = document.querySelector(".cart-items");
     cartElement.innerHTML = "";
@@ -42,6 +46,7 @@ export const renderCartItems = () => {
     });
 }
 
+//! funkcja zerująca koszyk
 const clearCart = () => {
     const expenseElement = document.querySelector(".expense"); 
     expenseElement.innerText = "SUMA";
@@ -53,10 +58,12 @@ const clearCart = () => {
     renderCartItems();
 }
 
+//? jeżeli strona się załaduje ma się wykonać funkcja renderCartItems
 window.addEventListener("load", renderCartItems);
 
 const clearCartButton = document.querySelector(".clear-cart");
 const btnCart = document.querySelector(".cart-icon");
+
 
 clearCartButton.addEventListener("click", clearCart);
 btnCart.addEventListener("click", showCart);

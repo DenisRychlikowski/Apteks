@@ -35,7 +35,7 @@ header{
     background: var(--main-background);
     min-height: 10vh;
     width: 100%;
-    z-index: 100;  /* Przypomnij se koszyk */
+    z-index: 100; 
     position: sticky;
     top: 0;
 }
@@ -96,6 +96,7 @@ header .header-menu .navbar .cart-icon .cart-counter{
 }
 
 /* drop menu sklep */
+
 header .header-menu .navbar .links.--drop .link{
     position: relative;
 }
@@ -134,6 +135,7 @@ header .header-menu .navbar .links.--drop .drop-menu-sklep:hover{
 }
 
 /* Footer styles */
+
 footer{
     width: 100%;
     min-height: 70vh;
@@ -145,6 +147,9 @@ footer{
     justify-content: space-evenly;
     color: var(--white);
 }
+
+/* footer form contact styles */
+
 footer .contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -188,6 +193,9 @@ footer .contact .submit:hover{
     background: var(--orange-hover);
     transition: .5s;
 }
+
+/* footer links styles */
+
 footer :where(.footer-socials ul, .footer-links ul){
     list-style: none;
 }

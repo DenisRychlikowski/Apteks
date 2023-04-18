@@ -1,5 +1,7 @@
 import { renderProducts } from "./dom-utils.js";
 
+//! funkcja pobierająca dane i wywołująca funkcję renderProducts
+
 const downloadata = async () => {
     try{
         let data = await fetch("produkty.json");
