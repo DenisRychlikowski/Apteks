@@ -27,6 +27,7 @@ main .welcome-image{
     object-fit: cover;
     width: 100%;
     box-shadow: 0px 8px 15px -8px rgba(49, 50, 56, 0.9);
+    pointer-events: none;
 }
 main .welcome-description{
     position: absolute;
