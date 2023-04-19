@@ -5,7 +5,7 @@ import { renderProducts } from "./dom-utils.js";
 const downloadata = async () => {
     try{
         let data
-        if(location.pathname.endsWith == "sport-sklep.html"){
+        if(location.pathname.endsWith("sport-sklep.html")){
             data = await fetch("../produkty.json");    
         }
         else{
