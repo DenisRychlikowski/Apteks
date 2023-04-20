@@ -37,7 +37,6 @@ const createProductDiv = (products) => {
 export const renderProducts = (products) => {
     const mainElement = document.querySelector(".main-products");
     
-    //Jeśli się kończy adres "index.html" zwraca true
     if(location.pathname.endsWith("index.html") || location.pathname.endsWith("Apteks/")) { 
         products.map((products) => {
             if(products.id < 4) {
