@@ -146,6 +146,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     color: var(--white);
+    z-index: 98;
 }
 
 /* footer form contact styles */

@@ -4,10 +4,10 @@ export let cartItems = [];
 //! funkcja wysuwająca koszyk
 const showCart = () => {
     const cartElement = document.querySelector(".cart");
-    if(cartElement.style.right === "-30%"){
+    if(cartElement.style.right === "-100%"){
         cartElement.style.right = "0";
     }else{
-        cartElement.style.right = "-30%";
+        cartElement.style.right = "-100%";
     }
 }
 
