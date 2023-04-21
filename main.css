@@ -138,10 +138,11 @@ main .show-more:hover{
 main .cart {
     position: fixed;
     bottom: 0;
-    background: var(--orange);
+    background: var(--main-background);
+    backdrop-filter: blur(3px);
     padding-top: 15vh;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +161,11 @@ main .cart hr{
     margin: 20px 0 60px;
     background: #000;
     border: none;
+}
+main .cart .cart-options{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 30px;
 }
 main .cart .cart-options :where(.clear-cart, .buy-btn){
     cursor: pointer;
@@ -188,13 +194,14 @@ main ul{
     width: 100%;
     display: grid;
     place-items: center;
+    overflow: auto;
 }
 main ul li{
     width: 60%;
     height: 100px;
-    font-size: clamp(12px, 15px, 18px);
-    background: var(--main-background);
-    border-bottom: 2px solid var(--blue);
+    font-size: 1.5rem;
+    background: transparent;
+    border-bottom: 2px solid #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -258,4 +265,16 @@ main .info-baner p{
     font-size: 22px;
     line-height: 30px;
     color: #000000;
+}
+
+/* scrollbar styles */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.2)
+}
+::-webkit-scrollbar-thumb{
+    background: var(--orange);
+    border-radius: 20px;
 }
