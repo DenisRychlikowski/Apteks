@@ -191,7 +191,7 @@ main .cart .cart-options span{
     place-items: center;
 }
 main ul{
-    width: 100%;
+    width: 80%;
     display: grid;
     place-items: center;
     overflow: auto;
