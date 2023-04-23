@@ -166,6 +166,7 @@ main .cart .cart-options{
     display: flex;
     align-items: flex-end;
     column-gap: 30px;
+    margin-bottom: 30px;
 }
 main .cart .cart-options :where(.clear-cart, .buy-btn){
     cursor: pointer;
@@ -183,6 +184,7 @@ main .cart .cart-options :where(.clear-cart:hover, .buy-btn:hover){
 }
 main .cart .cart-options span{
     font-size: clamp(20px, 25px, 30px);
+    font-weight: 700;
     background: var(--main-background);
     width: 100%;
     height: 40px;
