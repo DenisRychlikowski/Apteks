@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaNet | leki, suplementy diety, kosmetyki</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../headerFooter.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon">
@@ -26,28 +29,28 @@
 </head>
 <body>
 
-    <header>
+    <header class="d-flex justify-content-between align-items-center">
         <div class="header-logo">
-            <a href="../index.html">
-                <img src="../assets/logo.png" alt="Logo" width="250px" height="80px" />
+            <a href="index.html">
+                <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
             </a>
         </div>
 
         <div class="header-menu">
-            <ul class="navbar">
-                <li class="links"><a href="../index.html" class="link">Strona główna</a></li>
+            <ul class="navbar d-flex">
+                <li class="links"><a href="index.html" class="link">Strona główna</a></li>
                 <li class="links --drop">
-                    <a href="../sklep.html" class="link">Sklep</a>
+                    <a href="sklep.html" class="link">Sklep</a>
                     <div class="drop-menu-sklep">
                         <ul>
-                            <li><a href="../sklep-drop-links/zdrowie-sklep.html">Zdrowie</a></li>
-                            <li><a href="../sklep-drop-links/sport-sklep.html">Sport</a></li>
-                            <li><a href="../sklep-drop-links/higiena-sklep.html">Higiena</a></li>
-                            <li><a href="../sklep-drop-links/kosmetyki-sklep.html">Kosmetyki</a></li>
+                            <li><a href="./sklep-drop-links/zdrowie-sklep.html">Zdrowie</a></li>
+                            <li><a href="./sklep-drop-links/sport-sklep.html">Sport</a></li>
+                            <li><a href="./sklep-drop-links/higiena-sklep.html">Higiena</a></li>
+                            <li><a href="./sklep-drop-links/kosmetyki-sklep.html">Kosmetyki</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="links"><a href="../information.html" class="link">O nas</a></li>
+                <li class="links"><a href="information.html" class="link">O nas</a></li>
                 <li class="cart-icon"><a>
                     <ion-icon size="large" name="cart-outline"></ion-icon>
                     <span class="cart-counter" style="display: none;"></span>

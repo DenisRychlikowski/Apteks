@@ -7,14 +7,18 @@
     <title>PharmaNet | leki, suplementy diety, kosmetyki</title>
     <!-- to genialne coś jakbyś zapomniał -->
     <link rel="preload" href="./assets/welcome-image.jpg" as="image" />
-    <link rel="preload" href="main.css" as="style" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- style -->
     <link rel="stylesheet" href="headerFooter.css" />
     <link rel="stylesheet" href="main.css" />
+    <!-- favicon -->
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon" />
 </head>
-<body>
+<body class="d-flex flex-column justify-content-between align-items-center">
 
-    <header>
+    <header class="d-flex justify-content-between align-items-center">
         <div class="header-logo">
             <a href="index.html">
                 <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
@@ -22,7 +26,7 @@
         </div>
 
         <div class="header-menu">
-            <ul class="navbar">
+            <ul class="navbar d-flex">
                 <li class="links"><a href="index.html" class="link">Strona główna</a></li>
                 <li class="links --drop">
                     <a href="sklep.html" class="link">Sklep</a>
@@ -44,15 +48,15 @@
         </div>
     </header>
 
-    <main>
+    <main class="d-flex flex-column align-items-center">
         <img src="./assets/welcome-image.jpg" alt="Farmaceutka w aptece" class="welcome-image" loading="lazy" />
-        <div class="welcome-description">
-            <h2>Dostawa prosto pod twoje drzwi!</h2>
+        <div class="welcome-description d-flex flex-column justify-content-center align-items-center">
+            <h2 class="mb-4">Dostawa prosto pod twoje drzwi!</h2>
             <p>PharmaNet to firma dostarczająca leki i produkty farmaceutyczne prosto pod drzwi klientów. Oferta "Dostawa prosto pod twoje drzwi!" umożliwia zamówienie leków online i szybką dostawę w wyznaczonym czasie. Zapewniamy bezpieczeństwo i jakość produktów. Dołącz do zadowolonych klientów Apteks i skorzystaj z naszej wygodnej usługi!</p>
         </div>
 
         <h2 class="bestseller-h2"> Nasze bestsellery</h2>
-        <div class="main-products"></div>
+        <div class="main-products d-flex justify-content-evenly align-items-center flex-wrap"></div>
         <button class="show-more">
             <a href="sklep.html">Zobacz więcej</a>
         </button>
@@ -79,7 +83,7 @@
 
     </main>
 
-    <footer>
+    <footer class="d-flex align-items-center justify-content-evenly">
         <form 
             action="https://formsubmit.io/send/drychlikowski@gmail.com" 
             class="contact" 

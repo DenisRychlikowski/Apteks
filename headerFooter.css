@@ -19,18 +19,11 @@
 body{
     background: center / cover url("./assets/background-image.jpg");
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
 }
 
 /* Header styles */
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 40px;
     background: var(--main-background);
     min-height: 10vh;
@@ -41,8 +34,6 @@ header{
 }
 header .header-menu .navbar{
     list-style: none;
-    display: flex;
-    flex-direction: row;
 }
 header .header-menu .navbar :where(.links .link, .cart-icon a){
     color: var(--orange);
@@ -141,10 +132,6 @@ footer{
     min-height: 70vh;
     background: var(--footer-background);
     backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     color: var(--white);
     z-index: 98;
 }
