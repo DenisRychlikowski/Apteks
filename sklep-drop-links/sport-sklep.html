@@ -6,36 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaNet | leki, suplementy diety, kosmetyki</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../headerFooter.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon">
 </head>
-<body>
+<body class="d-flex flex-column justify-content-between align-items-center">
 
     <header class="d-flex justify-content-between align-items-center">
         <div class="header-logo">
-            <a href="index.html">
-                <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Logo" width="250px" height="80px" />
             </a>
         </div>
 
         <div class="header-menu">
             <ul class="navbar d-flex">
-                <li class="links"><a href="index.html" class="link">Strona główna</a></li>
+                <li class="links"><a href="../index.html" class="link">Strona główna</a></li>
                 <li class="links --drop">
-                    <a href="sklep.html" class="link">Sklep</a>
+                    <a href="../sklep.html" class="link">Sklep</a>
                     <div class="drop-menu-sklep">
                         <ul>
-                            <li><a href="./sklep-drop-links/zdrowie-sklep.html">Zdrowie</a></li>
-                            <li><a href="./sklep-drop-links/sport-sklep.html">Sport</a></li>
-                            <li><a href="./sklep-drop-links/higiena-sklep.html">Higiena</a></li>
-                            <li><a href="./sklep-drop-links/kosmetyki-sklep.html">Kosmetyki</a></li>
+                            <li><a href="./zdrowie-sklep.html">Zdrowie</a></li>
+                            <li><a href="./sport-sklep.html">Sport</a></li>
+                            <li><a href="./higiena-sklep.html">Higiena</a></li>
+                            <li><a href="./kosmetyki-sklep.html">Kosmetyki</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="links"><a href="information.html" class="link">O nas</a></li>
+                <li class="links"><a href="../information.html" class="link">O nas</a></li>
                 <li class="cart-icon"><a>
                     <ion-icon size="large" name="cart-outline"></ion-icon>
                     <span class="cart-counter" style="display: none;"></span>
@@ -44,8 +44,8 @@
         </div>
     </header>
 
-    <main>
-        <div class="main-products"></div>
+    <main class="d-flex flex-column align-items-center">
+        <div class="main-products d-flex justify-content-evenly align-items-center flex-wrap"></div>
         <div class="cart" style="right: -100%;">
             <span class="title-cart">Mój koszyk</span>
             <hr />
@@ -58,7 +58,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="d-flex align-items-center justify-content-evenly">
         <form 
             action="https://formsubmit.io/send/drychlikowski@gmail.com" 
             class="contact" 
@@ -111,10 +111,10 @@
 
         <div class="footer-links">
             <ul>
-                <li><a href="./footer-links/payments.html">Metody i płatności</a></li>
-                <li><a href="./footer-links/conditions.html">Zasady i warunki</a></li>
-                <li><a href="./footer-links/cookies-information.html">Polityka plików cookie</a></li>
-                <li><a href="./footer-links/regulations.html">Regulamin</a></li>
+                <li><a href="../footer-links/payments.html">Metody i płatności</a></li>
+                <li><a href="../footer-links/conditions.html">Zasady i warunki</a></li>
+                <li><a href="../footer-links/cookies-information.html">Polityka plików cookie</a></li>
+                <li><a href="../footer-links/regulations.html">Regulamin</a></li>
             </ul>
         </div>
 

@@ -6,18 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaNet | leki, suplementy diety, kosmetyki</title>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../headerFooter.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon">
     <style>
         main ol{
             width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
         }
         main ol li{
             margin: 10px 0;
@@ -27,30 +23,30 @@
         }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column justify-content-between align-items-center">
 
     <header class="d-flex justify-content-between align-items-center">
         <div class="header-logo">
-            <a href="index.html">
-                <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Logo" width="250px" height="80px" />
             </a>
         </div>
 
         <div class="header-menu">
             <ul class="navbar d-flex">
-                <li class="links"><a href="index.html" class="link">Strona główna</a></li>
+                <li class="links"><a href="../index.html" class="link">Strona główna</a></li>
                 <li class="links --drop">
-                    <a href="sklep.html" class="link">Sklep</a>
+                    <a href="../sklep.html" class="link">Sklep</a>
                     <div class="drop-menu-sklep">
                         <ul>
-                            <li><a href="./sklep-drop-links/zdrowie-sklep.html">Zdrowie</a></li>
-                            <li><a href="./sklep-drop-links/sport-sklep.html">Sport</a></li>
-                            <li><a href="./sklep-drop-links/higiena-sklep.html">Higiena</a></li>
-                            <li><a href="./sklep-drop-links/kosmetyki-sklep.html">Kosmetyki</a></li>
+                            <li><a href="../sklep-drop-links/zdrowie-sklep.html">Zdrowie</a></li>
+                            <li><a href="../sklep-drop-links/sport-sklep.html">Sport</a></li>
+                            <li><a href="../sklep-drop-links/higiena-sklep.html">Higiena</a></li>
+                            <li><a href="../sklep-drop-links/kosmetyki-sklep.html">Kosmetyki</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="links"><a href="information.html" class="link">O nas</a></li>
+                <li class="links"><a href="../information.html" class="link">O nas</a></li>
                 <li class="cart-icon"><a>
                     <ion-icon size="large" name="cart-outline"></ion-icon>
                     <span class="cart-counter" style="display: none;"></span>
@@ -58,9 +54,9 @@
             </ul>
         </div>
     </header>
-    <main>
+    <main class="d-flex flex-column align-items-center">
         <h1>Zasady i warunki</h1>
-        <ol>
+        <ol class="d-flex flex-column align-items-start justify-content-center">
             <li>
                 <h3>Wstęp</h3>
                 <p>Apteka PharmaNet ("Apteka") jest legalnie działającą apteką zarejestrowaną w Polsce. Niniejsze "Zasady i warunki" stanowią umowę między Tobą a Apteką, regulującą Twoje korzystanie ze strony internetowej apteki i zakupy leków przez internet. Korzystanie ze strony internetowej apteki oznacza akceptację niniejszych "Zasad i warunków". Apteka zastrzega sobie prawo do zmiany tych warunków w każdym czasie i bez wcześniejszego powiadomienia. Wszelkie zmiany zostaną opublikowane na tej stronie, dlatego zalecamy regularne ich sprawdzanie.</p>
@@ -99,7 +95,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="d-flex align-items-center justify-content-evenly">
         <form 
             action="https://formsubmit.io/send/drychlikowski@gmail.com" 
             class="contact" 
