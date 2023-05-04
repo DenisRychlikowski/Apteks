@@ -10,6 +10,12 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="headerFooter.css">
     <link rel="stylesheet" href="main.css">
+    <!-- react -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <!-- babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- favicon -->
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon">
 </head>
 <body class="d-flex flex-column justify-content-between align-items-center">
@@ -138,5 +144,8 @@
     <script type="module" src="api.js"></script>
     <script type="module" src="dom-utils.js"></script>
     <script type="module" src="cart-utils.js"></script>
+    <!-- header and footer components -->
+    <script type="text/babel" src="./react-components/header.jsx"></script>
+    <script type="text/babel" src="./react-components/footer.jsx"></script>
 </body>
 </html>
