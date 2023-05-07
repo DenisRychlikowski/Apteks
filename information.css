@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+main .information-section table, main .information-section td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+main .information-section hr {
+  width: 40vw;
+  height: 1px;
+  background-color: black;
+}
+
+main .information-section .description-PhramaNet {
+  width: 40vw;
+}
+
+main .information-section .description-PhramaNet p {
+  text-align: justify;
+}

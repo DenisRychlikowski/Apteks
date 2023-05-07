@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+$orange: rgb(227, 117, 0);
+$orange-hover: rgba(227, 117, 0, 0.7);
+$white: rgb(240, 248, 255);
+$blue: rgb(0, 14, 203);
+$blue-hover: rgba(0, 14, 203, 0.7);
+$main-background: rgba(255, 255, 255, 0.95);
+$footer-background: rgba(2, 64, 81, 0.97);
+
+main{
+    .information-section{
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        hr{
+            width: 40vw;
+            height: 1px;
+            background-color: black;
+        }
+        .description-PhramaNet{
+            width: 40vw;
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
