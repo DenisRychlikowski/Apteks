@@ -14,16 +14,16 @@ main{
             border: 1px solid black;
             border-collapse: collapse;
         }
-        hr{
-            width: 40vw;
-            height: 1px;
-            background-color: black;
-        }
         .description-PhramaNet{
             width: 40vw;
             p{
                 text-align: justify;
             }
         }
+    }
+    hr{
+        width: 40vw;
+        height: 1px;
+        background-color: black;
     }
 }

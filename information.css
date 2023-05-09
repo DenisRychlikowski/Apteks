@@ -4,16 +4,16 @@ main .information-section table, main .information-section td {
   border-collapse: collapse;
 }
 
-main .information-section hr {
-  width: 40vw;
-  height: 1px;
-  background-color: black;
-}
-
 main .information-section .description-PhramaNet {
   width: 40vw;
 }
 
 main .information-section .description-PhramaNet p {
   text-align: justify;
+}
+
+main hr {
+  width: 40vw;
+  height: 1px;
+  background-color: black;
 }

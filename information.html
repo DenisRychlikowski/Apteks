@@ -47,10 +47,10 @@
 
     <main class="d-flex flex-column align-items-center">
         <div class="information-section d-flex flex-column align-items-center justify-content-center">
-            <h1 class="mt-4">Informacje</h1>
-            <hr class="mt-4" />
-            <h3 class="my-4">Godziny otwarcia aptek stacjonarnych</h3>
-            <hr class="mb-4" />
+                <h1 class="mt-4">Informacje</h1>
+                <hr class="mt-4" />
+                <h3 class="my-4">Godziny otwarcia aptek stacjonarnych</h3>
+                <hr class="mb-4" />
             <table>
                 <tr>
                     <td class="px-4 py-2">Pon-Pt</td>
@@ -65,9 +65,9 @@
                     <td class="px-4 py-2">9:00-16:30</td>
                 </tr>
             </table>
-            <hr class="mt-4" />
-            <h3 class="my-4">PharmaNet</h3>
-            <hr class="mb-4" />
+                <hr class="mt-4" />
+                <h3 class="my-4">PharmaNet</h3>
+                <hr class="mb-4" />
             <div class="description-PhramaNet">
                 <p class="my-4">PharmaNet to innowacyjna apteka internetowa, która oferuje bogatą ofertę produktów farmaceutycznych, kosmetyków i sprzętu medycznego w konkurencyjnych cenach. Naszym celem jest zapewnienie pacjentom profesjonalnej opieki farmaceutycznej i fachowej wiedzy o zdrowiu.</p>
 
@@ -80,6 +80,11 @@
                 <p class="my-4">PharmaNet to miejsce, gdzie fachowa wiedza łączy się z troską i zaangażowaniem, aby zapewnić Ci najlepszą opiekę farmaceutyczną. Dołącz do naszej społeczności i zadbaj o swoje zdrowie z PharmaNet.</p>
             </div>
         </div>
+            <hr class="mt-4" />
+            <h3 class="my-4">Lokalizacja apteki</h3>
+            <hr class="mb-4" />
+        <div class="my-4" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><a href="https://1map.com/pl/map-embed">1 Map</a></div>
         <div class="cart" style="right: -100%;">
             <span class="title-cart">Mój koszyk</span>
             <hr />
@@ -172,5 +177,17 @@
     <script type="module" src="api.js"></script>
     <script type="module" src="dom-utils.js"></script>
     <script type="module" src="cart-utils.js"></script>
+    <script>(function () {
+        let setting = {"height":400,"width":600,"zoom":16,"queryString":"Księdza Kałuży 1, 46-040 Ozimek, Polska","place_id":"ChIJMc2lsUj5EEcRLCOeie4zPnM","satellite":false,"centerCoord":[50.68129190570156,18.219517027274286],"cid":"0x733e33ee899e232c","lang":"pl","cityUrl":"/poland/turawa-101213","cityAnchorText":"","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"924434"};
+        let s = document.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=924434';
+        s.async = true;
+        s.onload = function (e) {
+            window.OneMap.initMap(setting)
+        };
+        let to = document.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+    })();
+    </script>
 </body>
 </html>
