@@ -4,8 +4,9 @@ import { renderProducts } from "./dom-utils.js";
 
 const downloadata = async () => {
     try{
-        let data
-        if(location.pathname.endsWith("sport-sklep.html") || location.pathname.endsWith("zdrowie-sklep.html") || location.pathname.endsWith("higiena-sklep.html") || location.pathname.endsWith("kosmetyki-sklep.html")){
+        let data;
+        let l = location.pathname;
+        if(l.endsWith("sport-sklep.html") || l.endsWith("zdrowie-sklep.html") || l.endsWith("higiena-sklep.html") || l.endsWith("kosmetyki-sklep.html")){
             data = await fetch("../produkty.json");    
         }
         else{
