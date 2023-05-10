@@ -35,7 +35,7 @@ header .header-menu .navbar :where(.links .link, .cart-icon a) {
   padding: 8px 20px;
   margin: 0 10px;
   border-radius: 25px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   transition: .5s;
@@ -145,18 +145,18 @@ footer .contact {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 10px;
-  font-size: clamp(20px, 25px, 40px);
+  font-size: 1.3rem;
 }
 
 footer .contact .input {
   display: flex;
   flex-direction: column;
-  font-size: clamp(20px, 25px, 40px);
+  font-size: 1.3rem;
 }
 
 footer .contact .input input {
   padding: 5px 10px;
-  font-size: clamp(15px, 18px, 20px);
+  font-size: 1rem;
   background: transparent;
   border: none;
   border-bottom: 2px solid aliceblue;
@@ -180,7 +180,7 @@ footer .contact .submit {
   outline: none;
   background: #e37500;
   color: aliceblue;
-  font-size: clamp(20px, 25px, 40px);
+  font-size: 1.3rem;
   cursor: pointer;
   transition: .5s;
 }
@@ -195,7 +195,7 @@ footer :where(.footer-socials ul, .footer-links ul) {
 }
 
 footer :where(.footer-socials ul li a ion-icon, .footer-links ul li a) {
-  font-size: clamp(20px, 25px, 40px);
+  font-size: 1.3rem;
   color: aliceblue;
   transition: .5s;
 }
