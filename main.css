@@ -277,3 +277,23 @@ main .info-baner p {
   background: #e37500;
   border-radius: 20px;
 }
+
+@media (max-width: 400px) {
+  main {
+    width: 100%;
+  }
+  main .welcome-description {
+    position: static;
+    width: 100vw;
+    margin: 20px 0;
+  }
+  main .info-baner {
+    display: none;
+  }
+  main .main-products {
+    flex-direction: column;
+  }
+  main .main-products .product {
+    width: 80%;
+  }
+}

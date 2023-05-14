@@ -20,3 +20,12 @@ const downloadata = async () => {
     }
 }
 downloadata();
+
+//! funkcja do mobilnego menu
+
+const menuIcon = document.querySelector(".menu-icon");
+const headerMenu = document.querySelector(".header-menu");
+
+menuIcon.addEventListener('click', () => {
+    headerMenu.classList.toggle('mobile-menu')
+})

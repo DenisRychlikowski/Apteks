@@ -25,6 +25,10 @@ header {
   top: 0;
 }
 
+header .menu-icon {
+  display: none;
+}
+
 header .header-menu .navbar {
   list-style: none;
   /* drop menu sklep */
@@ -152,6 +156,7 @@ footer .contact .input {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
+  width: 90%;
 }
 
 footer .contact .input input {
@@ -223,4 +228,53 @@ footer .footer-socials ul li a .twitter-icon:hover {
 footer .footer-socials ul li a .ig-icon:hover {
   color: #cc2366;
   transition: .5s;
+}
+
+@media (max-width: 400px) {
+  header {
+    position: static;
+    height: 15vh;
+  }
+  header .menu-icon {
+    display: block;
+  }
+  header .header-menu {
+    top: 15vh;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: 0.5s;
+  }
+  header .header-menu .navbar {
+    flex-direction: column;
+  }
+  header .header-menu .navbar :where(.links, .cart-icon) {
+    padding: 20px;
+  }
+  header .header-menu .navbar :where(.links .link, .cart-icon a) {
+    color: #000ecb;
+  }
+  header .header-menu.mobile-menu {
+    margin-left: 0;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer .contact {
+    width: 100vw;
+    gap: 0;
+  }
+  footer .contact .input {
+    width: 94%;
+  }
+  footer .contact h2 {
+    text-align: center;
+  }
 }

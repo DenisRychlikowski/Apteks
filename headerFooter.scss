@@ -33,6 +33,9 @@ header {
   z-index: 100;
   position: sticky;
   top: 0;
+  .menu-icon{
+    display: none;
+  }
 
   .header-menu .navbar {
     list-style: none;
@@ -166,6 +169,7 @@ footer {
       display: flex;
       flex-direction: column;
       font-size: 1.3rem;
+      width: 90%;
 
       input {
         padding: 5px 10px;
@@ -241,6 +245,57 @@ footer {
     .ig-icon:hover {
       color: #cc2366;
       transition: .5s;
+    }
+  }
+}
+
+// media queires
+
+@media (max-width: 400px) {
+  header{
+    position: static;
+    height: 15vh;
+    .menu-icon{
+      display: block;
+    }
+    .header-menu{
+      top: 15vh;
+      left: 0;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
+      width: 100%;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: 0.5s;
+      .navbar{
+        flex-direction: column;
+        :where(.links, .cart-icon){
+          padding: 20px;
+        }
+        :where(.links .link, .cart-icon a) {
+          color: $blue;
+        }
+      }
+    }
+    .header-menu.mobile-menu{
+      margin-left: 0;
+    }
+  }
+  footer{
+    flex-direction: column-reverse;
+    .contact{
+      width: 100vw;
+      gap: 0;
+      .input{
+        width: 94%;
+      }
+      h2{
+        text-align: center;
+      }
     }
   }
 }

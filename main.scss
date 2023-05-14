@@ -292,3 +292,25 @@ main {
     background: $orange;
     border-radius: 20px;
 }
+
+// media queries
+
+@media (max-width: 400px) {
+    main{
+        width: 100%;
+        .welcome-description{
+            position: static;
+            width: 100vw;
+            margin: 20px 0;
+        }
+        .info-baner{
+            display: none;
+        }
+        .main-products {
+            flex-direction: column;
+            .product {
+                width: 80%;
+            }
+        }
+    }
+}
