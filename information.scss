@@ -27,3 +27,15 @@ main{
         background-color: black;
     }
 }
+
+// media queries
+
+@media (max-width: 450px) {
+    main{
+        .information-section{
+            .description-PhramaNet{
+                width: 90%;
+            }
+        }
+    }
+}

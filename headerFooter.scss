@@ -36,6 +36,9 @@ header {
   .menu-icon{
     display: none;
   }
+  #cart-icon-mobile{
+    display: none;
+  }
 
   .header-menu .navbar {
     list-style: none;
@@ -169,7 +172,7 @@ footer {
       display: flex;
       flex-direction: column;
       font-size: 1.3rem;
-      width: 90%;
+      width: 100%;
 
       input {
         padding: 5px 10px;
@@ -251,12 +254,27 @@ footer {
 
 // media queires
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   header{
     position: static;
     height: 15vh;
+    padding: 0 5px;
     .menu-icon{
       display: block;
+    }
+    #cart-icon-mobile{
+      position: relative;
+        .cart-counter {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          background: $orange;
+          aspect-ratio: 1 / 1;
+          font-size: 1rem;
+          padding: 2px 6px;
+          border-radius: 50%;
+          color: white;
+        }
     }
     .header-menu{
       top: 15vh;
@@ -273,28 +291,50 @@ footer {
       transition: 0.5s;
       .navbar{
         flex-direction: column;
-        :where(.links, .cart-icon){
+        :where(.links){
           padding: 20px;
         }
-        :where(.links .link, .cart-icon a) {
+        :where(.links .link) {
           color: $blue;
+        }
+        .cart-icon{
+          display: none;
         }
       }
     }
     .header-menu.mobile-menu{
       margin-left: 0;
     }
+    #cart-icon-mobile{
+      display: block;
+    }
   }
   footer{
     flex-direction: column-reverse;
     .contact{
       width: 100vw;
-      gap: 0;
       .input{
-        width: 94%;
+        width: 45vw;
+        justify-self: center;
+        align-self: center;
+      }
+      .input-max{
+        width: 97vw;
       }
       h2{
         text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+    }
+    .footer-socials{
+      ul{
+        display: flex;
+        flex-direction: row;
+        li{
+          padding: 20px;
+        }
       }
     }
   }

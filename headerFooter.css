@@ -29,6 +29,10 @@ header .menu-icon {
   display: none;
 }
 
+header #cart-icon-mobile {
+  display: none;
+}
+
 header .header-menu .navbar {
   list-style: none;
   /* drop menu sklep */
@@ -156,7 +160,7 @@ footer .contact .input {
   display: flex;
   flex-direction: column;
   font-size: 1.3rem;
-  width: 90%;
+  width: 100%;
 }
 
 footer .contact .input input {
@@ -230,13 +234,28 @@ footer .footer-socials ul li a .ig-icon:hover {
   transition: .5s;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
   header {
     position: static;
     height: 15vh;
+    padding: 0 5px;
   }
   header .menu-icon {
     display: block;
+  }
+  header #cart-icon-mobile {
+    position: relative;
+  }
+  header #cart-icon-mobile .cart-counter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #e37500;
+    aspect-ratio: 1 / 1;
+    font-size: 1rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    color: white;
   }
   header .header-menu {
     top: 15vh;
@@ -255,26 +274,46 @@ footer .footer-socials ul li a .ig-icon:hover {
   header .header-menu .navbar {
     flex-direction: column;
   }
-  header .header-menu .navbar :where(.links, .cart-icon) {
+  header .header-menu .navbar :where(.links) {
     padding: 20px;
   }
-  header .header-menu .navbar :where(.links .link, .cart-icon a) {
+  header .header-menu .navbar :where(.links .link) {
     color: #000ecb;
+  }
+  header .header-menu .navbar .cart-icon {
+    display: none;
   }
   header .header-menu.mobile-menu {
     margin-left: 0;
+  }
+  header #cart-icon-mobile {
+    display: block;
   }
   footer {
     flex-direction: column-reverse;
   }
   footer .contact {
     width: 100vw;
-    gap: 0;
   }
   footer .contact .input {
-    width: 94%;
+    width: 45vw;
+    justify-self: center;
+    align-self: center;
+  }
+  footer .contact .input-max {
+    width: 97vw;
   }
   footer .contact h2 {
     text-align: center;
+  }
+  footer .contact p {
+    text-align: center;
+  }
+  footer .footer-socials ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-socials ul li {
+    padding: 20px;
   }
 }

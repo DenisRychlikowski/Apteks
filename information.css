@@ -17,3 +17,9 @@ main hr {
   height: 1px;
   background-color: black;
 }
+
+@media (max-width: 450px) {
+  main .information-section .description-PhramaNet {
+    width: 90%;
+  }
+}
