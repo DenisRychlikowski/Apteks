@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="Pl-pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmaNet | leki, suplementy diety, kosmetyki</title>
-    <!-- to genialne coś jakbyś zapomniał -->
+    <!-- preload zdjęcia  -->
     <link rel="preload" href="./assets/welcome-image.jpg" as="image" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
@@ -16,21 +17,27 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="https://www.doz.pl/favicon.ico?v=2" type="image/x-icon" />
 </head>
+
 <body class="d-flex flex-column justify-content-between align-items-center">
     
+    <!-- sekcja nagłówkowa -->
     <header class="d-flex justify-content-between align-items-center">
+        <!-- logo strony -->
         <div class="header-logo">
             <a href="index.html">
                 <img src="./assets/logo.png" alt="Logo" width="250px" height="80px" />
             </a>
         </div>
 
+        <!-- ikona koszyka w wersji mobilnej -->
         <li class="cart-icon" id="cart-icon-mobile"><a>
             <ion-icon size="large" name="cart-outline"></ion-icon>
             <span class="cart-counter" style="display: none;"></span>
         </a></li>
+        <!-- ikona menu w wersji mobilnej -->
         <ion-icon name="menu-outline" size="large" class="menu-icon"></ion-icon>
         
+        <!-- menu  -->
         <div class="header-menu">
             <ul class="navbar d-flex">
                 <li class="links"><a href="index.html" class="link">Strona główna</a></li>
@@ -54,19 +61,23 @@
         </div>
     </header>
     
+    <!-- sekcja główna -->
     <main class="d-flex flex-column align-items-center">
+        <!-- sekcja powitalna -->
         <img src="./assets/welcome-image.jpg" alt="Farmaceutka w aptece" class="welcome-image" loading="lazy" />
         <div class="welcome-description d-flex flex-column justify-content-center align-items-center object-fit-cover">
             <h2 class="mb-4">Dostawa prosto pod twoje drzwi!</h2>
             <p>PharmaNet to firma dostarczająca leki i produkty farmaceutyczne prosto pod drzwi klientów. Oferta "Dostawa prosto pod twoje drzwi!" umożliwia zamówienie leków online i szybką dostawę w wyznaczonym czasie. Zapewniamy bezpieczeństwo i jakość produktów. Dołącz do zadowolonych klientów Apteks i skorzystaj z naszej wygodnej usługi!</p>
         </div>
         
+        <!-- sekcja bestsellerów -->
         <h2 class="bestseller-h2"> Nasze bestsellery</h2>
         <div class="main-products d-flex justify-content-evenly align-items-center flex-wrap"></div>
         <button class="show-more">
             <a href="sklep.html">Zobacz więcej</a>
         </button>
         
+        <!-- infobaner -->
         <div class="info-baner">
             <span class="info-title">Porozmawiaj z naszym farmaceutą</span>
             <div class="background-info">
@@ -76,6 +87,7 @@
             <p>Zadzwoń do nas jeśli potrzebujesz porady farmaceuty. Jesteśmy dla Ciebie czynni całą dobę, 7 dni w tygodniu, bezpłatnie.</p>
         </div>
         
+        <!-- koszyk -->
         <div class="cart" style="right: -100%;">
             <span class="title-cart">Mój koszyk</span>
             <hr />
@@ -86,10 +98,11 @@
                 <button class="clear-cart">Wyczyść</button>
             </div>
         </div>
-        
     </main>
     
+    <!-- sekcja stopki -->
     <footer class="d-flex align-items-center justify-content-evenly">
+        <!-- formularz kontakowy -->
         <form 
         action="https://formsubmit.io/send/drychlikowski@gmail.com" 
         class="contact" 
@@ -140,6 +153,7 @@
         <input type="submit" value="Prześlij" class="submit"/>
         </form>
         
+        <!-- linki do podstron -->
         <div class="footer-links">
             <ul>
                 <li><a href="./footer-links/payments.html">Metody i płatności</a></li>
@@ -149,6 +163,7 @@
             </ul>
         </div>
         
+        <!-- linki do sociali -->
         <div class="footer-socials">
             <ul>
                 <li><a href="https://www.facebook.com/" alt="facebook">
@@ -164,10 +179,15 @@
         </div>
     </footer>
     
+    <!-- skrypty do ikonek z ionicon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- skrypt do wyciągnięcia danych z produkty.json i do menu mobilnego -->
     <script type="module" src="api.js"></script>
+    <!-- skrypt z funkcją renderującą produkty w sekcji głównej -->
     <script type="module" src="dom-utils.js"></script>
+    <!-- skrypt z funkcjami do działania koszyka na stronie -->
     <script type="module" src="cart-utils.js"></script>
 </body>
+
 </html>

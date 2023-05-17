@@ -1,7 +1,7 @@
+//! import funkcji renderProducts z dom-utils
 import { renderProducts } from "./dom-utils.js";
 
 //! funkcja pobierająca dane i wywołująca funkcję renderProducts
-
 const downloadata = async () => {
     try{
         let data;
@@ -22,7 +22,6 @@ const downloadata = async () => {
 downloadata();
 
 //! funkcja do mobilnego menu
-
 const menuIcon = document.querySelector(".menu-icon");
 const headerMenu = document.querySelector(".header-menu");
 

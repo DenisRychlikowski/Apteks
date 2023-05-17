@@ -1,5 +1,7 @@
+//! import funkcji addToCart i renderCartItems z cart-items
 import { addToCart, renderCartItems } from "./cart-utils.js";
 
+//! funkcja zwracająca zdjęcie, nazwe, cenę produktu i przycisk dodaj 
 const createItems = (products) => {
     const imgElement = document.createElement("img");
     imgElement.src = products.image;
@@ -19,6 +21,7 @@ const createItems = (products) => {
     return [imgElement, spanNameElement, spanPriceElement, btnElement];
 }
 
+//! funkcja zwracająca pojemnik o klasie product
 const createProductDiv = (products) => {
     const productDivElement = document.createElement("div");
     productDivElement.classList.add("product");
@@ -34,6 +37,7 @@ const createProductDiv = (products) => {
     return productDivElement;
 }
 
+//! funkcja renderująca elementy w sekcji main-products
 export const renderProducts = (products) => {
     const mainElement = document.querySelector(".main-products");
     

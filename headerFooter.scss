@@ -1,5 +1,7 @@
+/* import czcionki z google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
+/* zmienne kolorów */
 $orange: rgb(227, 117, 0);
 $orange-hover: rgba(227, 117, 0, 0.7);
 $white: rgb(240, 248, 255);
@@ -8,6 +10,7 @@ $blue-hover: rgba(0, 14, 203, 0.7);
 $main-background: rgba(255, 255, 255, 0.95);
 $footer-background: rgba(2, 64, 81, 0.97);
 
+/* domyślne wartości elementów na stronie */
 * {
     padding: 0;
     margin: 0;
@@ -87,6 +90,7 @@ header {
       }
     }
 
+    /* koszyk ikona */
     .cart-icon .cart-counter {
       position: absolute;
       top: -20%;
@@ -252,7 +256,7 @@ footer {
   }
 }
 
-// media queires
+// header media queires
 
 @media (max-width: 900px) {
   header{
@@ -309,6 +313,9 @@ footer {
       display: block;
     }
   }
+
+  // footer media queires
+
   footer{
     flex-direction: column-reverse;
     .contact{

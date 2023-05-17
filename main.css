@@ -278,9 +278,13 @@ main .info-baner p {
   border-radius: 20px;
 }
 
+/* main media queries */
 @media (max-width: 900px) {
   main {
     width: 100%;
+    /* sekcja powitalna main w wersji mobilnej */
+    /* infobaner w sekcji main */
+    /* koszyk na stronie w wersji mobilnej */
   }
   main .welcome-description {
     position: static;
